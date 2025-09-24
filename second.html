@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100 font-sans">
+    <!--bg-gray-100 -> light gray background -->
+    <!--font-sans -> apply tailwind's default sans-serif font-->
+
+    <!--Navbar-->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+        <!--bg-blue-600 -> dark blue background -->
+        <!--p-4 -> padding all around (1rem)-->
+        <!--text-white -> white text -->
+        <!--flex -> enables flexbox-->
+        <!--justify-between -> space between left & right items-->
+        <!--items - center -> vertically center items-->
+
+        <h1 class="text-xl font-bold">Tailwind Demo</h1>
+        <!--text-xl -> large text size-->
+        <!--font-bold -> bold font-->
+
+        <ul class="flex gap-6">
+            <!--flex -> horizontal layout-->
+            <!--gap-6 -> space between items-->
+            <li class="hover:text-yellow-300 cursor-pointer">Home</li>
+            <!--hover:text-yellow-300 -> text turns yellow on hover-->
+            <!--cursor-pointer -> pointer cursor on hover-->
+            <li class="hover:text-yellow-300 cursor-pointer">About</li>
+            <li class="hover:text-yellow-300 cursor-pointer">Contact</li>
+        </ul>
+    </nav>
+
+    <!--Hero section-->
+    <section class="text-center py-16 bg-white shadow-md">
+        <!--text-center -> center align text -->
+        <!--py-16 -> padding top & bottom (4rem)-->
+        <!--bg-white -> white background-->
+        <!--shadow-md -> medium shadow-->
+
+        <h2 class="text-3xl font-extrabold text-gray-800 md-4">Welcome to Tailwind!</h2>
+        <!--text-3xl -> very large text -->
+        <!--font-extrabold -> extra bold-->
+        <!--text-gray-800 -> dark gray text-->
+        <!--md - 4 -> margin bottom-->
+
+        <p class="text-lg text-gray-600">This page is built using only Tailwind inline classes.</p>
+        <!--text-lg -> slightly larger text -->
+        <!--text-gray-600 -> medium gray-->
+    </section>
+
+    <!--Card Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+        <!--grid -> enables grid layout-->
+        <!--grid-cols-1 -> 1 column layout on small sreens-->
+        <!--md:grid-cols-3 -> 3 colums on medium+ screen-->
+        <!--gap-8 -> space between grid items -->
+        <!--p-8 -> padding around grid-->
+
+        <!--Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg shadow-lg p-6 hover:shadow-xl transition">
+            <!--bg-white -> card backgound-->
+            <!--rounded-lg -> large rounded corners-->
+            <!--shadow-lg -> large shadow-->
+            <!--p-6 -> padding inside card-->
+            <!--hover:shadow-xl -> Stronger shadow on hover-->
+            <!--transition -> smooth hover effect-->
+
+            <h3 class="text-xl font-semibold md-2">Fast Styling</h3>
+            <!--text-xl -> large heading-->
+            <!--font-semiblod -> semi-bold-->
+            <!--md-2 -> small bottom margin-->
+
+            <p class="text-gray-600">Tailwind gives you utility classes for instant design.</p>
+        </div>
+            <!--Card 2-->
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold md-2">Responsive</h3>
+                <p>Classes like <code>md: grid-cols-3</code> make layout Responsive.</p>
+            </div>
+
+            <!--Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold md-2">Customizable</h3>
+                <p class="text-gray-600">You can extend Tailwind's theme for uniqui designs.</p>
+            </div>
+        </div>
+
+        <!--footer -->
+        <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+            <!-- bg-gray-800 -> dark gray background -->
+            <!-- text-white -> white text -->
+            <!-- text-center -> center align text-->
+            <!-- p-4 -> padding all around -->
+            <!--mt - 8 margin top -->
+
+            <p>&copy; 2025 Tailwind Demo. all Rights Reserved.</p>
+
+        </footer>
+
+</body>
+</html>
