@@ -36,11 +36,140 @@
       <!--flex -> horizontal menu-->
       <!--gap-6 -> spacing -->
 
-      <li>About</li>
+      <li class="hover:text-indigo-600 cursor-pointer">About</li>
+      <li class="hover:text-indigo-600 cursor-pointer">Skills</li>
+      <li class="hover:text-indigo-600 cursor-pointer">Projects</li>
+      <li class="hover:text-indigo-600 cursor-pointer">Contact</li>
     </ul>
-
   </nav>
 
+  <!-- Hero section -->
+   <section class="flex flex-col md:flex-row items-center justify-center gap-12 py-20 px-8">
+    <!--flex flex-col -> vertical stack on mobile -->
+    <!--md:flex-row -> horizontal layout on large screens-->
+    <!--items-center -> verticla align -->
+    <!--justify-center -> center horizontally-->
+    <!--gap-12 -> spacing between image and text-->
+    <!--py-20 px-8 padding-->
+
+    <!--profile Image -->
+    <img src="image (2).jpg" alt="profile" class="w-64 h-64 rounded-full shadow-xl border-4 border-indigo-600 object-cover">
+    <!--w-64 h-64 -> fixed width/height -->
+    <!--rounded-full -> circle image -->
+    <!--shadow-xl -> big shadow-->
+    <!--border-4 border-indigo-600 -> thick indigo border-->
+    <!--object-cover -> image fits nicely inside-->
+
+    <!--Hero Text-->
+    <div class="max-w-lg text-center md:text-left">
+      <!--max-w-lg -> limits-->
+      <!--text-center -> center on mobile-->
+      <!--md:text-left -> left align on bigger screen-->
+
+      <h2 class="text-4xl font-extrablod md-4">I'm Sarfaraz 👋</h2>
+      <!--text-4xl -> large heading -->
+      <!--font-extrablod -> extra blod -->
+      <!--md-4 -> bottom margin -->
+
+      <p class="text-lg text-gray-600 md-6">A Full Stack Developer & DevOps Engineer Creating optimized Solution for the web.</p>
+      <!--text-lg -> slightly bigger-->
+      <!--text-gray-600 -> medium gray -->
+      <!--md-6 -> spacing -->
+
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg shadow-md transition ">Download Resume</button>
+      <!--bg-indigo-600 -> button color -->
+      <!--hover:bg-indigo-700 -> darker hover -->
+      <!--text-white -> white text-->
+      <!--py-3 px-6 -> padding-->
+      <!--rounded-lg -> rounded corners-->
+      <!--shadow-md -> small shadow-->
+      <!--transition -> smooth hover-->
+    </div>
+  </section>
+
+  <!--Skills Secotion -->
+  <section class="bg-white py-16 px-8">
+    <h3 class="text-2xl font-blod text-center md-12">Skills</h3>
+
+    <div class="max-w-2xl mx-auto space-y-6">
+      <!--max-w-2xl -> width limit -->
+      <!--mx-auto -> center horizontally -->
+      <!--space-y-6 -> vertical spacing -->
+
+      <!--Skills Bar -->
+      <div>
+        <p class="font-semiblod md-2">JavaScript</p>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <!--w-full -> full width -->
+          <!--bg-gray-200 -> light gray background-->
+          <!--rounded-full -> pill shape-->
+          <!--h-4 -> height 1rem-->
+          <div class="bg-indigo-600 h-4 rounded-full w-4/5"></div>
+          <!--bg-indigo-600 -> indigo bar-->
+          <!--h-4 rounded-full -> same shape-->
+          <!--w-4/5 -> 80% filled -->
+        </div>
+      </div>
+
+      <div>
+        <p class="font-semiblod md-2">React & Next.js</p>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-indigo-600 h-4 rounded-full w-3/4"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-semiblod md-2">DevOps</p>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-indigo-600 h-4 rounded-full w-2/3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
   
+  <!--Project Section -->
+  <section class="py-16 px-8 bg-gray-100">
+    <h3 class="text-2xl font-blod text-center md-12">Projects</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!--grid -> grid layout -->
+      <!--grid-cols-1 column. mobile -->
+      <!--md:grid-cols-3 -> columns on bigger screens-->
+      <!--gap-8 -> spacing-->
+
+      <div class="relative group">
+        <!--relative -> allows absolute children-->
+        <!--group -> enables hover effects on children-->
+        <img src="img.jpg" alt="Project 1" class="rounded-lg shadow-lg transform group-hover:scale-105 transition duration-300">
+        <!--transform -> allows scaling-->
+        <!--group-hover:scale-105 -> zoom efect-->
+        <!--transition duration-300 -> smooth animation -->
+        <!--shadow-lg -> shadow -->
+      </div>
+      <div class="relative group">
+        <img src="img1.jpg" alt="Project 2" class="rounded-lg shadow-lg transform group-hover:scale-105 transition duration-300"> 
+      </div>
+
+      <div class="relative group">
+        <img src="img2.jpg" alt="Project 3" class="rounded-lg shadow-lg transform group-hover:scale-105 transition duration-300">
+      </div>
+    </div>
+  </section>
+
+  <!--Cintect Section -->
+  <section class="bg-indigo-600 text-white py-16 px-8 text-center">
+    <!--bg-indigo-600 -> indigo background -->
+    <!--text-white -> white text-->
+    <!--py-16 px-8 -> padding align-->
+    <!--text-center -> center align-->
+
+    <h3 class="text-3xl font-blod md-4">Let's Work Together</h3>
+    <p class="md-6">Got A Project? I'd Love to Collaborate with you!</p>
+    <button class="bg-white text-indigo-600 font-semiblod py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">Contact Me</button>
+  </section>
+
+  <!--Footer-->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <p>© 2025 Sarfaraz Portfolio. All Right Reserved.</p>
+  </footer>
 </body>
 </html>
