@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Startup Landing page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-snas antialiased">
+    <!--🌐 Navbar-->
+    <nav class="flex justify-between items-cente px-6 md:px-20 py-5 bg-gray-900 bg-opacity-80 backdrop-blur-md fixed top-0 left-0 w-full z-50 shadow-lg">
+        <!--justify-between -> spaces logo & link apart-->
+        <!--bg-opacity-80 + backdrop-blur-md -> glassy effect-->
+        <!--fixed top-0 left-0 w-full -> sticky navbar-->
+
+        <h1 class="text-2xl font-extrabold text-yellow-400 tracking-wide">TechNovs</h1>
+        <!--text-2xl -> logo size-->
+        <!--font-extrabold -> thick text-->
+        <!--tracking-wide -> letter spacing-->
+
+        <ul class="hidden md:flex gap-10 text-gray-300 font-medium">
+            <!--hidden md:flex -> visible only on medium screen & up-->
+            <!--gap-10 -> spacing between link-->
+            <li class="hover:text-yellow-400 cursor-pointer transition">Home</li>
+            <li class="hover:text-yellow-400 cursor-pointer transition">Features</li>
+            <li class="hover:text-yellow-400 cursor-pointer transition">Pricing</li>
+            <li class="hover:text-yellow-400 cursor-pointer transition">Contact</li>
+             
+            </ul>
+            <button class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition">Get Started</button>
+    </nav>
+      
+    <!--Hero Section-->
+    <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 py-32 mt-16">
+        <!--flex-col-reverse md:flex-row -> text on top (mobile), side-by-side (desktop)-->
+        <!--py-32 -> top/botton spacing -->
+        <!--mt-16 -> to avoid overlapping navbar-->
+
+        <!--Left Content -->
+        <div class="md:w-1/2 text-center md:text-left">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+                Empowering <span class="text-yellow-400">Innovation</span><br>for the future</h1>
+                <p class="text-gray-300 mt-5 text-lg">Build, deploy, and scale your web projects effortlessly with TechNove's intelligent cloud platform.</p>
+                
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">Start Free</button>
+                    <button class="border border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg hover:text-white transition duration-300 ">Learn More</button>
+                </div>
+            </div>
+
+            <!--Right Image-->
+            <div class="md:w-1/2 md-10 md:md-0">
+                <img src="TechInnovation.jpg" alt="Tech Innovation" class="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300">
+            </div>
+    </section>
+
+    <!--Features Section-->
+    <section class="px-6 md:px-20 py-20 bg-gray-900 text-center">
+        <h2 class="text-4xl font-bold text-yellow-400 md-12">Powerful Features</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!--grid-cols -> responsive layout-->
+            <!--gap-10 -> spacing between card-->
+
+            <!--card 1-->
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg mt-4 hover:shadow-yellow-400/30 transition">
+                <h3 class="text-2xl font-semibold md-3 text-yellow-400">⚡ Blazing Fast
+                    <p class="text-gray-300 text-sm">Experience lightning-fast load times and top-tier performance with optimized architecture.</p>
+                </h3>
+            </div>
+
+            <!--card 2-->
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg mt-4 hover:shadow-yellow-400/30 transition">
+                <h3 class="text-2xl font-semibold md-3 text-yellow-400">🔒 Secure Cloud</h3>
+                <p class="text-gray-300 text-sm">Your data is encrypted and protected under our secure multi-layered infrastructure.</p>
+            </div>
+
+            <!--card 3-->
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg mt-4 hover:shadow-yellow-400/30 transition">
+                <h3 class="text-2xl font-semibold md-3 text-yellow-400">🌐 Global Access</h3>
+                <p class="text-gray-300 text-sm">Access your projects anytime, anywhere with our globally distributed data centers.</p>
+            </div>
+        </div>
+    </section>
+     
+    <!--Testimonials-->
+    <section class="px-6 md:px-20 py-20 bg-gray-950 text-center">
+        <h2 class="text-4xl font-bold text-yellow-400 md-12">What our Users Say</h2>
+
+        <div class="flex flex-col lg:flex-row gap-10 justify-center">
+
+            <!--Testimonial card 1-->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-md mt-4 hover:shadow-yellow-400/40 transition max-w-sm mx-auto">
+                <p class="text-gray-300 italic">"TechNova made deployment seamless and fast. My website performance improved by 40%!"</p>
+                <h4 class="mt-4 font-semibold text-yellow-400">— Sarah Johnson</h4>
+            </div>
+
+            <!--Testimonial card 2-->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-md mt-4 hover:shadow-yellow-400/40 transition max-w-sm mx-auto">
+                <p class="text-gray-300 italic">"The UI is clean, powerful, and simple. Perfect for developers and teams."</p>
+                <h4 class="mt-4 font-semibold text-yellow-400">— Raj Mehta</h4>
+            </div>
+
+            <!--Testimonial card 3-->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-md mt-4 hover:shadow-yellow-400/40 transition max-w-sm mx-auto">
+                <p class="text-gray-300 italic">"Support is top-notch! I moved all my projects to TechNova."</p>
+                <h4 class="mt-4 font-semibold text-yellow-400">— Lina Garcia</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <footer class="bg-gray-900 text-gray-400 py-10 px-6 md:px-20 text-center md:text-left">
+        <div class="flex flex-col md:flex-row justify-between items-cente gap-6">
+            <p class="text-sm">&copy; 2025 TechNova. All rights reserved.</p>
+            <ul class="flex gap-6 text-sm">
+                <li class="hover:text-yellow-400 transition cursor-pointer">Privacy</li>
+                <li class="hover:text-yellow-400 transition cursor-pointer">Terms</li>
+                <li class="hover:text-yellow-400 transition cursor-pointer">Support</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
